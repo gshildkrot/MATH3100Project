@@ -70,4 +70,6 @@ d1 = (np.log(S0/K) + (r + 0.5*sigma**2)*T) / (sigma*np.sqrt(T))
 d2 = d1 - sigma*np.sqrt(T)
 true_price = S0 * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)
 
+
 print(f"True Black-Scholes Price: ${true_price:.2f}")
+print(f"Percent Error: {abs(true_price - option_price) / true_price * 100:.2f}%")
