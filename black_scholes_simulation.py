@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 # PARAMETERS
 S0 = 100        # Current Price ($)
 K = 100         # Strike Price ($)
-T = 1.0         # Time to maturity (1 Year)
-r = 0.05        # Interest rate (5%)
-sigma = 0.2     # Volatility (20%)
+T = 1.0         # Time to maturity (Years)
+r = 0.3611      # Risk free rate (Treasury Rate for T)
+sigma = 0.1000  # Volatility (For actual stocks, it can be found on Yahoo Finance (or others) under Implied Volatility)
 steps = 252     # Trading days in a year
 dt = T / steps  # Time step size
 
 # DRAWING THE PATHS
-num_paths = 10
+num_paths = 10  # Number of paths drawn on the graph
 all_paths = []
 
 for i in range(num_paths):
@@ -46,7 +46,7 @@ plt.legend()
 plt.show()
 
 # PRICING THE OPTION
-num_sims = 10000
+num_sims = 10000    # Number of times the simulation is run
 payoffs = []
 
 for i in range(num_sims):
@@ -69,7 +69,6 @@ from scipy.stats import norm
 d1 = (np.log(S0/K) + (r + 0.5*sigma**2)*T) / (sigma*np.sqrt(T))
 d2 = d1 - sigma*np.sqrt(T)
 true_price = S0 * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)
-
 
 print(f"True Black-Scholes Price: ${true_price:.2f}")
 print(f"Percent Error: {abs(true_price - option_price) / true_price * 100:.2f}%")
