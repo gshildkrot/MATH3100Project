@@ -1,35 +1,34 @@
-# Black-Scholes Project
+# Black-Scholes Option Pricing Simulation
 
-## Overview
-This project simulates stock prices and calculates the value of a Call Option using the Black-Scholes model. We use Python to run a simulate thousands of simulations and compare the result to the actual formula.
+## Project Summary
+This project simulates the price of a stock using **Geometric Brownian Motion (GBM)** to determine the fair value of a Call Option. We validated our Python simulation by comparing its results to the analytical Black-Scholes formula, achieving near-perfect accuracy.
 
-## What the Code Does
-1.  **Generates Stock Paths:** Uses Geometric Brownian Motion to simulate how a stock price moves over 1 year.
-2.  **Visualizes Risk:** It plots 10 different random paths to show how volatility affects price.
-3.  **Prices the Option:** It runs 10,000 simulations to find the fair price of a European Call Option.
-4.  **Checks Accuracy:** It compares our simulation result with the true Black-Scholes formula to calculate the error.
+## Simulation Results
 
-## How to Experiment with Results
-You can change the stock market conditions by editing the **PARAMETERS** section at the top of the Python file.
+### 1. Low Volatility (Stable Market)
+*Parameters: Volatility ($\sigma$) = 10%*
+In a stable market, the stock price paths stay tightly clustered around the trend. The option is cheaper because there is less chance of a massive payout.
+
+![[Low Volatility Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/LowVol.png)]
+
+---
+
+### 2. High Volatility (Risky Market)
+*Parameters: Volatility ($\sigma$) = 80%*
+In a highly volatile market, the price swings wildly. The option is much more expensive because there is a higher chance the stock could skyrocket (even if it could also crash).
+
+![High Volatility Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/HighVol.png)
+
+---
+
+### 3. Real World Example: Amazon (AMZN)
+*Parameters: Price = $227, Volatility ($\sigma$) = 36.72% (Current Market Data), Skrike Price (K) = 230*
+We simulated 10,000 paths for Amazon stock over the next year to price an "At-the-Money" Call Option.
+
+![AMZN Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/AMZN.png)
+
+---
 
 ## How to Run It
-You need Python installed on your computer along with a few standard libraries.
-
-1.  **Install the requirements:**
-    ```bash
-    pip install numpy matplotlib scipy
-    ```
-
-2.  **Run the simulation:**
-    (Make sure your file is named `black_scholes_simulation.py` or change the name below)
-    ```bash
-    python black_scholes_simulation.py
-    ```
-
-## Example Output
-When you run the code, a graph will pop up showing the random stock paths. In the console, you will see:
-
-```text
-Estimated Option Price: $10.42
-
-True Black-Scholes Price: $10.45
+1. Install dependencies: `pip install numpy matplotlib scipy`
+2. Run the code: `python black_scholes_simulation.py`
