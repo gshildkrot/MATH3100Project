@@ -6,7 +6,7 @@ This project simulates the price of a stock using **Geometric Brownian Motion (G
 ## Simulation Results
 
 ### 1. Low Volatility (Stable Market)
-*Parameters: Price = $100, Volatility (σ) = 10%, Strike Price = $100*
+*Price = $100, Volatility (σ) = 10%, Strike Price = $100, Time to Expiration (T) = 1 Year*
 
 In a stable market, the stock price paths stay tightly clustered around the trend. The option is cheaper than a higher volatility option because there is less chance of a massive payout, even if there is a high chance of small growth.
 
@@ -23,9 +23,9 @@ Percent Error: 0.01%
 ---
 
 ### 2. High Volatility (Risky Market)
-*Parameters: Price = $100, Volatility (σ) = 80%, Strike Price = $100*
+*Price = $100, Volatility (σ) = 80%, Strike Price = $100, Time to Expiration (T) = 1 Year*
 
-In a highly volatile market, the price swings wildly. The option is more expensive because there is a higher chance the stock could skyrocket (even if it could also crash).
+The increase in price is due to the option's positive convexity. Because an option holder's loss is capped (you can't lose more than the premium) but the potential profit is theoretically unlimited, high volatility is beneficial. Extreme price swings increase the likelihood of massive payouts on the upside, while the downside remains fixed at zero.
 
 ![High Volatility Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/HighVol.png?raw=true)
 
@@ -39,7 +39,7 @@ Percent Error: 0.71%
 ---
 
 ### 3. Real World Example: Amazon (AMZN)
-*Parameters: Price = $227, Volatility (σ) = 36.72% (Current Market Data), Strike Price (K) = $230*
+*Price = $227, Volatility (σ) = 36.72% (Current Market Data), Strike Price (K) = $230, Time to Expiration (T) = 1 Year*
 
 This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, as the stock is expensive but also has a relatively high chance of growing rapidly.
 
@@ -56,3 +56,4 @@ Percent Error: 0.09%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
