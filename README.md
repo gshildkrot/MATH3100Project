@@ -41,7 +41,7 @@ Percent Error: 2.43%
 ### 3. Real World HIGH Volatility Example: Strategy (MSTR)
 *Price = $183, Volatility (σ) = 80.16% (Current Market Data), Strike Price (K) = $185, Time to Expiration (T) = 1 Year*
 
-This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, due to the high volatility, exactly as we would expect
+With volatility around 80%, the simulation shows wild price swings. The option premium is expensive because the Positive Convexity of the option captures all the upside potential while capping the downside risk.
 ![MSTR Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/MSTR.png?raw=true)
 
 ```text
@@ -54,7 +54,7 @@ Percent Error: 2.18%
 ### 4. Real World LOW Volatility Example: Coca-Cola (KO)
 *Price = $70, Volatility (σ) = 19.94% (Current Market Data), Strike Price (K) = $70, Time to Expiration (T) = 1 Year*
 
-This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is cheap, due to the low volatility, exactly as we would expect
+With volatility at just 15%, the price paths are tightly clustered. The option is cheap because the probability of a massive breakout is very low.
 ![KO Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/KO.png?raw=true)
 
 ```text
@@ -67,6 +67,7 @@ Percent Error: 0.29%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
