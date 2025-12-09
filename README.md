@@ -38,23 +38,35 @@ Percent Error: 2.43%
 ```
 ---
 
-### 3. Real World Example: Amazon (AMZN)
-*Price = $227, Volatility (σ) = 36.72% (Current Market Data), Strike Price (K) = $230, Time to Expiration (T) = 1 Year*
+### 3. Real World HIGH Volatility Example: Strategy (MSTR)
+*Price = $183, Volatility (σ) = 80.16% (Current Market Data), Strike Price (K) = $185, Time to Expiration (T) = 1 Year*
 
-This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, as the stock is expensive but also has a relatively high chance of growing rapidly.
-
-![AMZN Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/AMZN.png?raw=true)
+This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, due to the high volatility, exactly as we would expect
+![MSTR Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/MSTR.png?raw=true)
 
 ```text
-Estimated Option Price: $32.99
-True Black-Scholes Price: $32.34
-Percent Error: 2.03%
+Estimated Option Price: $59.86
+True Black-Scholes Price: $58.59
+Percent Error: 2.18%
 ```
+---
 
+### 3. Real World LOW Volatility Example: EXAMPLE
+*Price = $183, Volatility (σ) = 80.16% (Current Market Data), Strike Price (K) = $185, Time to Expiration (T) = 1 Year*
+
+This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, due to the high volatility, exactly as we would expect
+![EXAMPLE Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/MSTR.png?raw=true)
+
+```text
+Estimated Option Price: $59.86
+True Black-Scholes Price: $58.59
+Percent Error: 2.18%
+```
 ---
 
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
