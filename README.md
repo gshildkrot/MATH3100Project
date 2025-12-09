@@ -51,22 +51,23 @@ Percent Error: 2.18%
 ```
 ---
 
-### 3. Real World LOW Volatility Example: EXAMPLE
-*Price = $183, Volatility (σ) = 80.16% (Current Market Data), Strike Price (K) = $185, Time to Expiration (T) = 1 Year*
+### 3. Real World LOW Volatility Example: Coca-Cola (KO)
+*Price = $70, Volatility (σ) = 19.94% (Current Market Data), Strike Price (K) = $70, Time to Expiration (T) = 1 Year*
 
-This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is expensive, due to the high volatility, exactly as we would expect
-![EXAMPLE Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/MSTR.png?raw=true)
+This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is cheap, due to the low volatility, exactly as we would expect
+![KO Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/KO.png?raw=true)
 
 ```text
-Estimated Option Price: $59.86
-True Black-Scholes Price: $58.59
-Percent Error: 2.18%
+Estimated Option Price: $6.77
+True Black-Scholes Price: $6.79
+Percent Error: 0.29%
 ```
 ---
 
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
