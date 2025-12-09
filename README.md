@@ -51,7 +51,7 @@ Percent Error: 2.18%
 ```
 ---
 
-### 3. Real World LOW Volatility Example: Coca-Cola (KO)
+### 4. Real World LOW Volatility Example: Coca-Cola (KO)
 *Price = $70, Volatility (σ) = 19.94% (Current Market Data), Strike Price (K) = $70, Time to Expiration (T) = 1 Year*
 
 This is a real-world example of this simulation (no longer using dummy variables). In this case, the option is cheap, due to the low volatility, exactly as we would expect
@@ -67,6 +67,7 @@ Percent Error: 0.29%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
