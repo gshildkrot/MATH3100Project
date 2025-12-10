@@ -45,6 +45,8 @@ Percent Error: 2.43%
 With volatility at just 15%, the price paths are tightly clustered. The option is cheap because the probability of a massive breakout is very low.
 ![KO Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/KO.png?raw=true)
 
+**Running the simulation 10,000 times to estimate a fair option price and comparing it with the real value from the formula:**
+
 ```text
 Estimated Option Price: $6.77
 True Black-Scholes Price: $6.79
@@ -59,6 +61,8 @@ Percent Error: 0.29%
 With volatility around 40%, the simulation shows some wild price swings, while the majority of the paths stay close together. The option premium has a high price still because there still are some cases where the stock grows dramatically, and the loss is capped. 
 ![AMZN Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/AMZN.png?raw=true)
 
+**Running the simulation 10,000 times to estimate a fair option price and comparing it with the real value from the formula:**
+
 ```text
 Estimated Option Price: $36.45
 True Black-Scholes Price: $35.82
@@ -72,6 +76,8 @@ Percent Error: 1.75%
 With volatility around 80%, the simulation shows wild price swings. The option premium is expensive because the Positive Convexity of the option captures all the upside potential while capping the downside risk.
 ![MSTR Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/MSTR.png?raw=true)
 
+**Running the simulation 10,000 times to estimate a fair option price and comparing it with the real value from the formula:**
+
 ```text
 Estimated Option Price: $59.86
 True Black-Scholes Price: $58.59
@@ -83,6 +89,7 @@ Percent Error: 2.18%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
