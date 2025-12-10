@@ -5,6 +5,7 @@ This project simulates the price of a stock using **Geometric Brownian Motion (G
 
 ## Mathematical Derivation
 For the full derivation of Black–Scholes using MGFs and GBM, see:
+[Black–Scholes Mathematical Proof (PDF)](Black%20Shoals%20Proof.pdf)
 
 ## Simulation Results
 
@@ -92,6 +93,7 @@ Percent Error: 2.18%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
