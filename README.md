@@ -4,7 +4,7 @@
 This project simulates the price of a stock using **Geometric Brownian Motion (GBM)** to determine the fair value of a **European** Call Option. We validated our Python simulation by comparing its results to the analytical Black-Scholes formula, achieving high accuracy, would approach 100% accuracy as the number of simulations increases.
 
 ## Mathematical Derivation
-For the full derivation of Black–Scholes using MGFs and GBM, see:
+For the full derivation of Black–Scholes using Moment Generating Function's and Geometric Brownian Motion, see:
 [Black–Scholes Mathematical Proof (PDF)](Black%20Shoals%20Proof.pdf)
 
 ## Simulation Results
@@ -93,6 +93,7 @@ Percent Error: 2.18%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
