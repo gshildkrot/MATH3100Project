@@ -42,7 +42,7 @@ Percent Error: 2.43%
 ### 3. Real World LOW Volatility Example: Coca-Cola (KO)
 *Price = $70, Volatility (σ) = 19.94% (Current Market Data), Strike Price (K) = $70, Time to Expiration (T) = 1 Year*
 
-With volatility at just 15%, the price paths are tightly clustered. The option is cheap because the probability of a massive breakout is very low.
+With volatility at just 20%, the price paths are tightly clustered. The option is cheap because the probability of a massive breakout is very low.
 ![KO Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/KO.png?raw=true)
 
 **Running the simulation 10,000 times to estimate a fair option price and comparing it with the real value from the formula:**
@@ -89,6 +89,7 @@ Percent Error: 2.18%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+
 
 
 
