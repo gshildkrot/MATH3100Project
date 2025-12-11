@@ -62,7 +62,7 @@ Percent Error: 0.29%
 ### 4. Real World In-Between Volatility Example: Amazon (AMZN)
 *Price = $228, Volatility (σ) = 36.59% (Current Market Data), Strike Price (K) = $230, Time to Expiration (T) = 1 Year*
 
-With volatility around 40%, the simulation shows some wild price swings, while the majority of the paths stay close together. The option premium is still at a high price because there are still some cases where the stock grows dramatically, and the loss is capped. 
+With volatility around 35%, the simulation shows some wild price swings, while the majority of the paths stay close together. The option premium is still at a high price because there are still some cases where the stock grows dramatically, and the loss is capped. 
 ![AMZN Chart](https://github.com/gshildkrot/MATH3100Project/blob/main/AMZN.png?raw=true)
 
 **Running the simulation 10,000 times to estimate a fair option price and comparing it with the value from Black–Scholes Formula:**
@@ -94,6 +94,7 @@ Percent Error: 2.18%
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
 3. To modify input parameters, change the values at the top of the code.
+
 
 
 
