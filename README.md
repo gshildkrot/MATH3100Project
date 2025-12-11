@@ -8,6 +8,7 @@ For the full derivation of Black–Scholes using the Moment Generating Function 
 [Black–Scholes Mathematical Proof (PDF)](Black%20Scholes%20Proof.pdf)
 
 ## Simulation Results
+In addition to comparing the Monte Carlo estimates to the analytical Black–Scholes price, we also report the option premium as a percentage of the underlying stock price. This highlights how expensive the convexity is relative to the share itself and makes it easier to compare options across different volatility levels.
 
 ### 1. Low Volatility (Stable Market)
 *Price = $100, Volatility (σ) = 10%, Strike Price = $100, Time to Expiration (T) = 1 Year*
@@ -94,6 +95,7 @@ Percent Error: 2.18%
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
 3. To modify input parameters, change the values at the top of the code.
+
 
 
 
