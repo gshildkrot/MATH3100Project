@@ -23,6 +23,7 @@ In a stable market, the stock price paths stay tightly clustered around the tren
 Estimated Option Price: $5.98
 True Black-Scholes Price: $5.94
 Percent Error: 0.58%
+Premium as % of Spot: 5.98%
 ```
 
 ---
@@ -40,6 +41,7 @@ The increase in price is due to the option's positive convexity. Because an opti
 Estimated Option Price: $31.55
 True Black-Scholes Price: $32.34
 Percent Error: 2.43%
+Premium as % of Spot: 31.55%
 ```
 
 ---
@@ -56,6 +58,7 @@ With volatility at just 20%, the price paths are tightly clustered. The option i
 Estimated Option Price: $6.77
 True Black-Scholes Price: $6.79
 Percent Error: 0.29%
+Premium as % of Spot: 9.67%
 ```
 
 ---
@@ -72,6 +75,7 @@ With volatility around 35%, the simulation shows some wild price swings, while t
 Estimated Option Price: $36.45
 True Black-Scholes Price: $35.82
 Percent Error: 1.75%
+Premium as % of Spot: 15.99%
 ```
 ---
 
@@ -87,6 +91,7 @@ With volatility around 80%, the simulation shows wild price swings. The option p
 Estimated Option Price: $59.86
 True Black-Scholes Price: $58.59
 Percent Error: 2.18%
+Premium as % of Spot: 32.71%
 ```
 
 ---
@@ -95,6 +100,7 @@ Percent Error: 2.18%
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
 3. To modify input parameters, change the values at the top of the code.
+
 
 
 
