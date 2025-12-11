@@ -93,6 +93,8 @@ Percent Error: 2.18%
 ## How to Run It
 1. Install dependencies: `pip install numpy matplotlib scipy`
 2. Run the code: `python black_scholes_simulation.py`
+3. To modify input parameters, change the values at the top of the code.
+
 
 
 
